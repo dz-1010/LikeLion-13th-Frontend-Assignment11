@@ -13,8 +13,10 @@ function PokemonCard({ pokemon }) {
   return (
     <div className="flex justify-center bg-gray-50 border-2 border-gray-200 rounded-md w-38 h-32 shadow-md">
       <Link to={`/pokemon/${pokemon.name}`}>
-        <img className="" src={imageUrl} alt={pokemon.name} />
-        <div className="font-yg text-center text-black">{pokemon.name}</div>
+        <img src={imageUrl} alt={pokemon.name} />
+        <div className="font-yg text-center text-black capitalize">
+          {pokemon.name}
+        </div>
       </Link>
     </div>
   );

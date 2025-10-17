@@ -33,23 +33,33 @@ function DetailPage() {
   }
 
   return (
-    <div>
-      <div>
-        <div>
+    <div className="grid justify-center min-w-screen">
+      <div className="border-2 border-red-500 rounded-xl shadow-lg p-5 w-80">
+        <div className="flex justify-center border-2 border-black-500 rounded-full bg-gray-50 w-30 h-30 m-auto">
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
         </div>
 
-        <h1 className="font-yg">{pokemon.name}</h1>
+        <h1 className="font-yg text-center text-2xl uppercase font-black">
+          {pokemon.name}
+        </h1>
 
-        <div className="font-yg">
+        <div className="flex justify-center ">
           {pokemon.types.map((t) => (
-            <span key={t.type.name}>{t.type.name}</span>
+            <span
+              className="font-yg bg-black text-white rounded-3xl p-1.5 mr-1"
+              key={t.type.name}
+            >
+              {t.type.name}
+            </span>
           ))}
         </div>
 
-        <ul className="font-yg">
+        <ul className="font-yg uppercase border-t-2 border-red-500 mt-3">
           {pokemon.stats.map((stat) => (
-            <li key={stat.stat.name}>
+            <li
+              className="flex justify-between border-b-1 border-red-500"
+              key={stat.stat.name}
+            >
               <span>{stat.stat.name.toUpperCase()}</span>
               <span>{stat.base_stat}</span>
             </li>
