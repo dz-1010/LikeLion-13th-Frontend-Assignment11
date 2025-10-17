@@ -39,11 +39,11 @@ function DetailPage() {
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
         </div>
 
-        <h1 className="font-yg text-center text-2xl uppercase font-black">
+        <h1 className="font-yg text-center text-2xl uppercase font-black m-2">
           {pokemon.name}
         </h1>
 
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           {pokemon.types.map((t) => (
             <span
               className="font-yg bg-black text-white rounded-3xl p-1.5 mr-1"
@@ -54,7 +54,7 @@ function DetailPage() {
           ))}
         </div>
 
-        <ul className="font-yg uppercase border-t-2 border-red-500 mt-3">
+        <ul className="font-yg uppercase border-t-2 border-red-500 mt-3 font-bold">
           {pokemon.stats.map((stat) => (
             <li
               className="flex justify-between border-b-1 border-red-500"

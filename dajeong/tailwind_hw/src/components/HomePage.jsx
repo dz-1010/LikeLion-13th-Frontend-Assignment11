@@ -27,7 +27,7 @@ function HomePage() {
 
   return (
     <div className="grid justify-center min-w-screen gap-4">
-      <h1 className="font-yg text-center mt-5 text-5xl">포켓몬 도감</h1>
+      <h1 className="font-yg text-center mt-8 text-5xl">포켓몬 도감</h1>
 
       <input
         className="font-yg m-auto border-2 border-gray-200 rounded-md w-60 p-1"
