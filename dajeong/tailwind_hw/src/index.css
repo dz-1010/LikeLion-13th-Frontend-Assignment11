@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'OngleipParkDahyeon';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-display: swap;
 }
-
 @theme {
-  --font-yg: 'OngleipParkDahyeon';
+  --font-yg: 'Pretendard';
 }
 
 :root {
