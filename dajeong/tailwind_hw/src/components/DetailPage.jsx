@@ -22,14 +22,18 @@ function DetailPage() {
 
   if (isLoading) {
     return (
-      <div>
+      <div className="flex justify-center items-center w-screen h-screen">
         <ClipLoader size={60} color={"#e60012"} />
       </div>
     );
   }
 
   if (isError) {
-    return <div>포켓몬 정보를 불러오는 데 실패했습니다.</div>;
+    return (
+      <div className="flex justify-center items-center w-screen h-screen">
+        포켓몬 정보를 불러오는 데 실패했습니다.
+      </div>
+    );
   }
 
   return (
